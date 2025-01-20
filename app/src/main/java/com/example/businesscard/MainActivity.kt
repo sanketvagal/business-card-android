@@ -90,16 +90,17 @@ fun BusinessCard(
         Text(
             text = name,
             color = Color.Black,
-            fontSize = 28.sp,
+            fontSize = 36.sp,
             fontWeight = FontWeight.Bold,
-            modifier = Modifier
+            modifier = Modifier.padding(6.dp)
 
         )
         Text(
             text = title,
             color = Color.Black,
+            fontSize = 24.sp,
             fontWeight = FontWeight.Bold,
-            modifier = Modifier
+            modifier = Modifier.padding(6.dp)
         )
         Spacer(modifier = Modifier.height(200.dp))
         Column(
