@@ -76,7 +76,8 @@ fun BusinessCard(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = modifier
             .background(Color(0xffb9f6ca))
-            .padding(16.dp)){
+            .padding(16.dp)
+            .fillMaxSize()){
         Image(
             painter = image,
             contentDescription = "Android Logo",
@@ -88,6 +89,7 @@ fun BusinessCard(
 
         Text(
             text = name,
+            color = Color.Black,
             fontSize = 28.sp,
             fontWeight = FontWeight.Bold,
             modifier = Modifier
@@ -95,41 +97,55 @@ fun BusinessCard(
         )
         Text(
             text = title,
+            color = Color.Black,
             fontWeight = FontWeight.Bold,
             modifier = Modifier
         )
-        Spacer(modifier = Modifier.height(40.dp))
+        Spacer(modifier = Modifier.height(200.dp))
         Column(
             verticalArrangement = Arrangement.Bottom,
             horizontalAlignment = Alignment.Start,
-            modifier = Modifier
+            modifier = Modifier.padding(start = 20.dp)
 
         ) {
             Row {
                 Icon(
                     Icons.Rounded.Call,
                     contentDescription = "contact",
+                    tint = Color.Black,
+                    modifier = Modifier.padding(4.dp)
+
                 )
                 Text(
                     text = contact,
+                    color = Color.Black,
+                    modifier = Modifier.padding(4.dp)
                 )
             }
             Row {
                 Icon(
                     Icons.Rounded.Share,
-                    contentDescription = "social tag"
+                    contentDescription = "social tag",
+                    tint = Color.Black,
+                    modifier = Modifier.padding(4.dp)
                 )
                 Text(
                     text = social,
+                    color = Color.Black,
+                    modifier = Modifier.padding(4.dp)
                 )
             }
             Row {
                 Icon(
                     Icons.Rounded.Email,
-                    contentDescription = "email"
+                    contentDescription = "email",
+                    tint = Color.Black,
+                    modifier = Modifier.padding(4.dp)
                 )
                 Text(
                     text = email,
+                    color = Color.Black,
+                    modifier = Modifier.padding(4.dp)
                 )
             }
         }
